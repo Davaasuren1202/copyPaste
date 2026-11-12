@@ -1,0 +1,13 @@
+.hp-bar {
+  width: 80%;
+  background-color: rgb(240, 65, 65);
+  border-radius: 18px;
+  height: 40px;
+  margin: 40px auto;
+}
+.hp-fill {
+  width: 100%;
+  background-color: rgb(80, 206, 80);
+  height: 100%;
+  border-radius: 18px;
+}

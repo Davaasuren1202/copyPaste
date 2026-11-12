@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello Bulma!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="styel.css" />
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Hello World</h1>
+        <p class="subtitle">My first website with <strong>Bulma</strong>!</p>
+      </div>
+      <!-- homework -->
+      <h1>❤️ HP: <span id="hp">100</span></h1>
+      <div class="hp-bar"><div id="hpfill" class="hp-fill"></div></div>
+
+      <button onclick="minus()" class="button is-danger">attack</button>
+      <button onclick="plus()" class="button is-success">heal</button>
+    </section>
+    <script>
+      let heal = document.getElementById("hpfill");
+      let health = 100;
+
+      const plus = () => {
+        heal.style.width = health + "%";
+        heal.innerText = health;
+      };
+      const minus = () => {
+        health = health - 10;
+        heal.innerText = health;
+        heal.style.width;
+      };
+    </script>
+  </body>
+</html>
